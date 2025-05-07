@@ -11,6 +11,10 @@
     color: white;
   }
   
+html, body{
+  scroll-behavior: smooth;
+}
+
 .wotches div{
   text-align: center;
 }
