@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #0b0c0e;
+    color: white;
+  }
+  
+.wotches div{
+  text-align: center;
+}
+
+.wotches{
+  padding: 15px 0;
+}
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #0b0c0e;
+    flex-wrap: wrap;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    color: grey;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  nav ul li a.active {
+    color: rgba(139, 142, 153, 1);
+  }
+  
+  .icons img {
+    height: 24px;
+    cursor: pointer;
+  }
+  
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .hero .text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .hero .text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .hero .text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    max-width: 400px;
+  }
+  
+  .search-bar .image {
+    padding-left: 19px;
+  }
+  
+  .search-bar .image img {
+    width: 21px;
+    height: 21px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+  }
+  
+  .search-bar button {
+    padding: 12px 20px;
+    border: none;
+    background: rgb(83, 120, 255);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0 15px 15px 0;
+  }
+  
+  .hero .image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hero .image img {
+    /* width: 100%; */
+    max-width: 461px;
+    height: auto;
+  }
+  
+  .brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+    background-color: #ffffff;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .brand-card {
+    background-color: #f2f2f2;
+    color: #222;
+    text-align: center;
+    max-width: 300px;
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 25px
+  }
+  
+  .brand-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .brand-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .brand-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .brand-card p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .hero {
+      flex-direction: column;
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    .hero .image {
+      margin-top: 30px;
+    }
+  
+    .hero .image img {
+      max-width: 300px;
+    }
+  
+    .brands {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+    }
+  
+    .brand-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .search-bar {
+      flex-direction: row;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
